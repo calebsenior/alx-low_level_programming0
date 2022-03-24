@@ -1,17 +1,21 @@
 #include <stdio.h>
 /**
- * main - Program entry point
+ * main - Entry point
  *
- * Return: 0 on success. Error code otherwise
+ * Return: Always 0 (success/correct)
  */
 int main(void)
-{
-	int i = 0;
 
-	for (;i <= 9; i++; )
-	{
-		printf("%d", i);
-	}
-	printf("\n");
-	return (0);
+{
+int i;
+
+for (i = 0 ; i < 10; i++)
+{
+printf("%i", i);
+}
+
+printf("\n");
+
+return (0);
+
 }
