@@ -1,13 +1,31 @@
 #include "main.h"
 
 /**
- * set_string - sets the value of a pointer to a char
- * @s: content is to be copied
- *@to: string
- *Return: void
- */
+ * _strchr - Locates a character in a string
+ * @s: String
+ * @c: Character to search
+ * Return: Pointer to the first occurrence of the character c in the string s
+ **/
 
-void set_string(char **s, char *to)
+char *_strchr(char *s, char c)
 {
-	*s = to;
+
+	while (*s != '\0') /*Declaring WHILE*/
+	{
+		if (*s == c) /*if s ==  c*/
+		{
+			return (s); /*return s*/
+		}
+
+		++s;
+	}
+
+	if (*s == c)
+	{
+		return (s);
+
+	}
+
+
+	return (0);/* values null*/
 }
